@@ -6,7 +6,7 @@
 /*   By:  mchenava < mchenava@student.42lyon.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/11 12:45:55 by  mchenava         #+#    #+#             */
-/*   Updated: 2023/01/20 13:37:27 by  mchenava        ###   ########.fr       */
+/*   Updated: 2023/05/13 16:29:10 by  mchenava        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ int	main(int argc, char **argv, char **envp)
 
 	if (argc < 5)
 		return (ft_printf(2, "pipex: not enough arguments\
-			\nusage: ./pipex infile \"cmd1\" \"cmd2\" outfile\n"), 1);
+			\nusage: ./pipex infile \"cmd1\" \"cmd2\" \"[cmds...]\" outfile\n"), 1);
 	pipex = parse(argc, argv, envp);
 	if (!pipex)
 		return (1);
